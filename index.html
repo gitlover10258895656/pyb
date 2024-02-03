@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 Trial Version - https://www.wysiwygwebbuilder.com">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#FileUpload1 :file").on('change', function()
+   {
+      var input = $(this).parents('.input-group').find(':text');
+      input.val($(this).val());
+   });
+});
+</script>
+</head>
+<body>
+<div id="container">
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb19.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+<div id="wb_Image1" style="position:absolute;left:0px;top:3px;width:177px;height:121px;z-index:1;">
+<img src="images/pixabay001.png" id="Image1" alt="https://pixabay.com/users/1626596" title="https://pixabay.com/users/1626596" width="177" height="121"></div>
+<div id="wb_TextArt1" style="position:absolute;left:177px;top:3px;width:312px;height:105px;z-index:2;">
+<img src="images/img0001.png" id="TextArt1" alt="www" title="www" width="312" height="105" style="width:312px;height:105px;"></div>
+<div id="FileUpload1" class="input-group" style="position:absolute;left:35px;top:169px;width:200px;visibility:hidden;height:26px;z-index:3;">
+<input class="form-control" type="text" readonly="" id="FileUpload1-input">
+<label class="input-group-btn">
+<input type="file" name="FileUpload1" id="FileUpload1-file" style="display:none;"><span class="btn">Browse...</span>
+</label>
+</div>
+<button type="submit" id="ThemeableButton1" onclick="alert('Google.com loaded');window.location.href='./Google.html';return false;" name="Google" value="Google" class="ui-button ui-corner-all" style="position:absolute;left:28px;top:124px;width:100px;height:100px;z-index:4;">Google</button>
+<button type="submit" id="ThemeableButton2" onclick="alert('Yahoo.com loaded');window.location.href='./yahoo.html';return false;" name="yahoo" value="yahoo" class="ui-button ui-corner-all" style="position:absolute;left:137px;top:124px;width:100px;height:100px;z-index:5;">yahoo</button>
+<button type="submit" id="ThemeableButton3" onclick="alert('youtube.com loaded');window.location.href='./youtube.html';return false;" name="youtube" value="youtube" class="ui-button ui-corner-all" style="position:absolute;left:248px;top:124px;width:100px;height:100px;z-index:6;">youtube</button>
+<button type="submit" id="ThemeableButton4" onclick="alert('URL loaded');window.location.href='./www.html';return false;" name="URL" value="URL" class="ui-button ui-corner-all" style="position:absolute;left:360px;top:124px;width:100px;height:100px;z-index:7;">URL</button>
+</div>
+</body>
+</html>
